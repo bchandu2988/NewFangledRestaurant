@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Newfangled Restaurant | Discovery Assignment Final</title>
+
+	<meta charset="UTF-8"/>
+	<meta name="description" content="Newfangled Restaurant">
+	<meta name="keywords" content="Fresh restaurant, Good restaurant ">
+	<meta name="author" content="Chandan Bandi">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" href="./_images/logo.png" type="image/x-icon">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="./_css/style.css">
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script>
+	function initialize() {
+	  var mapProp = {
+	    center:new google.maps.LatLng(12.907987,77.607901),
+	    zoom:15,
+	    mapTypeId:google.maps.MapTypeId.ROADMAP
+	  };
+	  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+</head>
+<body>
+    <header class="mainheading">
+    	<div class="logosection">
+    		NEWFANGLED RESTAURANT
+    	</div>
+		<nav class="site-nav">
+			<ul class="pri-nav-menu">
+
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="aboutus.html">ABOUT US</a></li>
+				<li><a href="gallery.html">GALLERY</a></li>
+				<li><a class="active" href="contactus.html">CONTACT US</a></li>
+			</ul>	
+		</nav>
+    </header>
+
+	<main class="homecontainerwrapper">
+		<section id="contactsection">
+		<h2>CONTACT US</h2>
+			<h3>FEEDBACK</h3>
+			<p>Have a suggestion, complaint or compliment? We’d love to hear from you. Mail us at <a href="mailto:feedback@newfangled.com">feedback@newfangled.com</a> 
+
+			</p>
+			<h3>Enquiries</h3>
+			<p>Have a question? Mail askus@newfangled.com and we’ll get back to you immediately.</p>
+			<h3>Talk to our CEO</h3>
+			<p>You can mail our CEO directly at <a href="mailto:ceo@newfangled.com">ceo@newfangled.com</a></p>
+			<h3>Careers</h3>
+			<p>Want to work with us? Mail <a href="mailto:career@newfangled.com">career@newfangled.com</a> to start your journey with Barbeque Nation.</p>
+			<h3>Corporate Office</h3>
+			<p>New Fangled Restaurant, Site No. 09, 6th Cross,<br>
+			IOC Petrol Bunk, BTM Layout, Bangalore 560076 <br>
+			Karnataka. 	<br>
+			Phone: 0804500180
+			</p>
+			<div id="googleMap"></div>
+		</section>
+	</main>
+
+    
+	<footer class="footer">
+		<div class="leftsection">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li>-</li>
+				<li><a href="contactus.html">Contact Us</a></li>
+			</ul>
+		</div>
+		<div class="centersection">
+			&copy; Copyright 2015, Newfangled Restaurant
+		</div>
+		<div class="rightsection">
+			<ul>
+				<li><a href="#fb" class="fbicon"></a></li>
+				<li><a href="#tw" class="twicon"></a></li>
+				<li><a href="#g" class="gicon"></a></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</footer>
+</body>
+</html>
